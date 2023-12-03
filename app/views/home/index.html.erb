@@ -1,0 +1,17 @@
+<!-- app/views/sms/send_sms.html.erb -->
+
+<%= form_tag(send_sms_path, method: :post) do %>
+  <center>
+    <br>
+    <!-- Mobile input -->
+    <div class="form-outline mb-4">
+      <%= text_field_tag :mobile, nil, id: 'form2Example1', class: 'form-control' %>
+      <%= label_tag 'form2Example1', 'Mobile No', class: 'form-label' %>
+    </div>
+    <br>
+   
+    <!-- Submit button -->
+    <%= button_tag 'Sign in', class: 'btn btn-primary btn-block mb-4', type: 'submit' %>
+  </center>
+
+<% end %>

@@ -1,0 +1,18 @@
+<!-- app/views/sms/send_sms.html.erb -->
+
+<%= form_tag(verify_otp_path, method: :post) do %>
+  <center>
+    <br>
+    
+    <!-- OTP input -->
+    <div class="form-outline mb-4">
+      <%= password_field_tag :otp, nil, id: 'form2Example2', class: 'form-control' %>
+      <%= label_tag 'form2Example2', 'OTP', class: 'form-label' %>
+    </div>
+
+    <br>
+    <!-- Submit button -->
+    <%= button_tag 'Submit', class: 'btn btn-primary btn-block mb-4', type: 'submit' %>
+  </center>
+  
+<% end %>
